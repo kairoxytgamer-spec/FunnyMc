@@ -1,104 +1,205 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FunnyMC Lifesteal</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FunnyMC Store</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #07110f;
-      color: white;
-      text-align: center;
-    }
+<style>
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:Arial,sans-serif;
+  background:#0b0b12;
+  color:white;
+}
+header{
+  text-align:center;
+  padding:35px 15px;
+  background:#151525;
+}
+h1{font-size:42px;margin:0 0 10px}
+header p{color:#bbb}
 
-    nav {
-      padding: 20px;
-      background: #050908;
-      font-size: 25px;
-      font-weight: bold;
-    }
+.buttons{
+  text-align:center;
+  margin:20px;
+}
+.btn{
+  display:inline-block;
+  padding:13px 22px;
+  margin:6px;
+  border-radius:8px;
+  text-decoration:none;
+  color:white;
+  background:#6c3cff;
+  font-weight:bold;
+}
+.discord{background:#5865F2}
 
-    nav span {
-      color: #20e69a;
-    }
-
-    .hero {
-      padding: 80px 20px;
-    }
-
-    .tag {
-      color: #20e69a;
-      font-size: 18px;
-    }
-
-    h1 {
-      font-size: 48px;
-      margin: 20px 0;
-    }
-
-    p {
-      color: #aeb8b6;
-      font-size: 18px;
-    }
-
-    .button {
-      display: inline-block;
-      margin: 12px;
-      padding: 16px 30px;
-      border-radius: 12px;
-      background: #13c98a;
-      color: #00150e;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .dark {
-      background: #13201d;
-      color: white;
-    }
-
-    .section {
-      padding: 40px 20px;
-    }
-
-    .card {
-      max-width: 500px;
-      margin: 15px auto;
-      padding: 25px;
-      background: #101d1a;
-      border-radius: 15px;
-    }
-  </style>
+.container{
+  max-width:1100px;
+  margin:auto;
+  padding:20px;
+}
+h2{
+  text-align:center;
+  margin:35px 0 20px;
+}
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
+  gap:18px;
+}
+.card{
+  background:#171724;
+  border:1px solid #29293b;
+  border-radius:14px;
+  padding:25px;
+  text-align:center;
+}
+.card h3{font-size:23px;margin:5px}
+.price{
+  font-size:25px;
+  font-weight:bold;
+  margin:15px;
+}
+.buy{
+  display:inline-block;
+  padding:11px 20px;
+  background:#6c3cff;
+  color:white;
+  border-radius:7px;
+  text-decoration:none;
+  font-weight:bold;
+}
+footer{
+  text-align:center;
+  padding:30px;
+  color:#888;
+}
+</style>
 </head>
 
 <body>
 
-  <nav>
-    🩸 <span>FunnyMC</span> Lifesteal
-  </nav>
+<header>
+  <h1>FunnyMC</h1>
+  <p>Minecraft Store</p>
 
-  <div class="hero">
-    <div class="tag">⚡ Powerful Minecraft Lifesteal</div>
-
-    <h1>Welcome to<br>FunnyMC</h1>
-
-    <p>Join our public Lifesteal Minecraft server.</p>
-
-    <a class="button" href="#">🎮 Play Now</a>
-    <a class="button dark" href="#">💬 Discord</a>
+  <div class="buttons">
+    <a class="btn" href="minecraft://play.funnymc.fun">🎮 Play Now</a>
+    <a class="btn discord" href="https://discord.gg/zPs5KEsyv" target="_blank">
+      💬 Discord
+    </a>
   </div>
 
-  <div class="section">
-    <h2>🔥 Server Features</h2>
+  <p>Server IP: <b>play.funnymc.fun</b></p>
+</header>
 
-    <div class="card">
-      ❤️ Lifesteal SMP<br><br>
-      ⚔️ PvP & Events<br><br>
-      🌎 Public Community
-    </div>
-  </div>
+<div class="container">
+
+<h2>🏆 Ranks</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>🌑 ECLIPSE</h3>
+<div class="price">999 PKR</div>
+<a class="buy" href="#">Buy Now</a>
+</div>
+
+<div class="card">
+<h3>👑 LEGEND</h3>
+<div class="price">699 PKR</div>
+<a class="buy" href="#">Buy Now</a>
+</div>
+
+<div class="card">
+<h3>⚔️ KNIGHT</h3>
+<div class="price">399 PKR</div>
+<a class="buy" href="#">Buy Now</a>
+</div>
+
+<div class="card">
+<h3>🛡️ WARRIOR</h3>
+<div class="price">199 PKR</div>
+<a class="buy" href="#">Buy Now</a>
+</div>
+
+</div>
+
+<h2>🔑 Keys</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>FunnyMC Key</h3>
+<div class="price">99 PKR</div>
+<a class="buy" href="#">Buy Now</a>
+</div>
+
+<div class="card">
+<h3>Mega Key</h3>
+<div class="price">149 PKR</div>
+<a class="buy" href="#">Buy Now</a>
+</div>
+
+<div class="card">
+<h3>Monthly Key</h3>
+<div class="price">199 PKR</div>
+<a class="buy" href="#">Buy Now</a>
+</div>
+
+<div class="card">
+<h3>Party Key</h3>
+<div class="price">249 PKR</div>
+<a class="buy" href="#">Buy Now</a>
+</div>
+
+<div class="card">
+<h3>Vote Key</h3>
+<div class="price">49 PKR</div>
+<a class="buy" href="#">Buy Now</a>
+</div>
+
+</div>
+
+<h2>💰 Coins</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>1,000 Coins</h3>
+<div class="price">100 PKR</div>
+<a class="buy" href="#">Buy Now</a>
+</div>
+
+<div class="card">
+<h3>2,500 Coins</h3>
+<div class="price">225 PKR</div>
+<a class="buy" href="#">Buy Now</a>
+</div>
+
+<div class="card">
+<h3>5,000 Coins</h3>
+<div class="price">400 PKR</div>
+<a class="buy" href="#">Buy Now</a>
+</div>
+
+<div class="card">
+<h3>10,000 Coins</h3>
+<div class="price">700 PKR</div>
+<a class="buy" href="#">Buy Now</a>
+</div>
+
+</div>
+
+</div>
+
+<footer>
+© 2026 FunnyMC • All Rights Reserved
+</footer>
 
 </body>
 </html>
